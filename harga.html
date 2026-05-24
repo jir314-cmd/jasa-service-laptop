@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga - LaptopCare PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pricing-table { width: 100%; border-collapse: collapse; margin-top: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 8px; overflow: hidden; }
+        .pricing-table th, .pricing-table td { padding: 15px 20px; text-align: left; }
+        .pricing-table th { background-color: var(--primary-color); color: white; }
+        .pricing-table tr:nth-child(even) { background-color: var(--light-color); }
+        .price-tag { color: var(--secondary-color); font-weight: bold; }
+        @media (max-width: 768px) { .pricing-table { display: block; overflow-x: auto; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Laptop<span>Care</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="harga.html" class="active">Daftar Harga</a></li>
+            <li><a href="visi-misi.html">Visi & Misi</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontak.html" class="btn-nav">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="section-title">
+            <h2>Estimasi Biaya Jasa Service</h2>
+            <p>Berikut adalah acuan biaya jasa layanan kami. *Harga belum termasuk penggantian suku cadang.</p>
+        </div>
+
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Jenis Layanan</th>
+                    <th>Estimasi Waktu</th>
+                    <th>Biaya Jasa Mulai Dari</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cleaning Internal + Ganti Thermal Paste Premium</td>
+                    <td>45 Menit</td>
+                    <td class="price-tag">Rp 150.000</td>
+                </tr>
+                <tr>
+                    <td>Instal Ulang Windows + Driver & Aplikasi Standar</td>
+                    <td>1 - 2 Jam</td>
+                    <td class="price-tag">Rp 150.000</td>
+                </tr>
+                <tr>
+                    <td>Ganti Layar LCD / LED Laptop</td>
+                    <td>1 Jam</td>
+                    <td class="price-tag">Rp 200.000</td>
+                </tr>
+                <tr>
+                    <td>Perbaikan Motherboard / Mati Total / Korslet</td>
+                    <td>3 - 7 Hari</td>
+                    <td class="price-tag">Rp 500.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LaptopCare PRO Indonesia. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

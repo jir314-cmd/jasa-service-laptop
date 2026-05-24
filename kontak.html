@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - LaptopCare PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
+        .contact-info h3 { font-size: 24px; margin-bottom: 20px; color: var(--dark-color); }
+        .contact-info p { margin-bottom: 15px; color: #555; }
+        .contact-form { background: #f1f5f9; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 600; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; background: white; border-radius: 4px; font-size: 15px; }
+        .btn-submit { background-color: var(--primary-color); color: white; border: none; padding: 12px 25px; font-size: 16px; font-weight: 600; border-radius: 4px; cursor: pointer; width: 100%; transition: background 0.3s; }
+        .btn-submit:hover { background-color: #004085; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Laptop<span>Care</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="harga.html">Daftar Harga</a></li>
+            <li><a href="visi-misi.html">Visi & Misi</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontak.html" class="btn-nav">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Hubungi LaptopCare PRO</h3>
+                <p>Punya pertanyaan spesifik mengenai kerusakan laptop Anda? Jangan ragu untuk menghubungi atau langsung datang ke workshop kami.</p>
+                <p><strong>📍 Alamat:</strong> Jl. Yos Sudarso Nomor 1 Bakung, Jawa Timur</p>
+                <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/6285609378344" style="color: var(--secondary-color); font-weight: bold; text-decoration: none;">+62 812-3456-7890</a></p>
+                <p><strong>⏰ Jam Operasional:</strong> Senin - Sabtu (08.00 - 21.00 WIB)</p>
+            </div>
+
+            <div class="contact-form">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" placeholder="Contoh: Andi Wijaya" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Merk & Tipe Laptop</label>
+                        <input type="text" id="brand" placeholder="Contoh: Asus ROG GL503" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="desc">Deskripsi Kerusakan</label>
+                        <textarea id="desc" rows="4" placeholder="Contoh: Sering mati sendiri saat main game..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Form Konsultasi</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LaptopCare PRO Indonesia. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

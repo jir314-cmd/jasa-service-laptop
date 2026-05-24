@@ -1,0 +1,245 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #28a745;
+    --dark-color: #1e2229;
+    --light-color: #f8f9fa;
+    --text-muted: #6c757d;
+}
+
+body {
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav .logo span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--primary-color);
+}
+
+.btn-nav {
+    background-color: var(--secondary-color);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-nav:hover {
+    background-color: #218838;
+}
+
+/* Section Global Settings */
+section {
+    padding: 60px 8%;
+    flex: 1;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: var(--dark-color);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #11151c;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 5px 10px;
+    }
+}<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visi & Misi - LaptopCare PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .vision-box, .mission-box {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 1px solid #eee;
+        }
+        .vision-box h3, .mission-box h3 {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .vision-box p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.8;
+            font-style: italic;
+        }
+        .mission-list {
+            list-style: none;
+        }
+        .mission-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            color: #444;
+        }
+        .mission-list li::before {
+            content: "🚀";
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi (Visi & Misi Aktif) -->
+    <nav>
+        <a href="index.html" class="logo">Laptop<span>Care</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="harga.html">Daftar Harga</a></li>
+            <li><a href="visi-misi.html" class="active">Visi & Misi</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontak.html" class="btn-nav">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Visi & Misi -->
+    <section>
+        <div class="section-title">
+            <h2>Visi & Misi Perusahaan</h2>
+            <p>Komitmen kami dalam memberikan layanan perbaikan laptop terbaik dan terpercaya di Indonesia.</p>
+        </div>
+
+        <div class="about-container">
+            <!-- Blok Visi -->
+            <div class="vision-box">
+                <h3>👁️ Visi Kami</h3>
+                <p>"Menjadi pusat penyedia layanan perbaikan dan optimasi teknologi laptop nomor satu di Indonesia yang dikenal karena integritas, transparansi biaya, kualitas pengerjaan yang andal, serta jaminan garansi yang menyelamatkan produktivitas digital masyarakat."</p>
+            </div>
+
+            <!-- Blok Misi -->
+            <div class="mission-box">
+                <h3>🎯 Misi Kami</h3>
+                <ul class="mission-list">
+                    <li><strong>Pelayanan Transparan:</strong> Memberikan diagnosis kerusakan yang akurat dan jujur di depan pelanggan tanpa ada biaya yang dimanipulasi atau tersembunyi.</li>
+                    <li><strong>Kualitas Tanpa Kompromi:</strong> Menggunakan suku cadang (sparepart) original atau berkualitas tinggi yang didukung oleh peralatan kerja modern berstandar teknisi profesional.</li>
+                    <li><strong>Pengembangan SDM Berkelanjutan:</strong> Terus meningkatkan keahlian tim teknisi kami agar selalu siap menangani arsitektur teknologi hardware dan software laptop generasi terbaru.</li>
+                    <li><strong>Solusi Tepat Waktu:</strong> Menghargai waktu pelanggan dengan memberikan estimasi pengerjaan yang cepat, efektif, dan dapat diandalkan untuk mendukung aktivitas kerja maupun belajar.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LaptopCare PRO Indonesia. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
